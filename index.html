@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android-E</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/eye.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="nav-left-side">
+            <h1>Android-E</h1>
+        </div>
+        <div class="nav-right-side">
+            <ul class="nav-links">
+                <li><a href="#home-page">Home</a></li>
+                <li><a href="#about-me-page">About me</a></li>
+                <li><a href="#skills-page">Skills</a></li>
+                <li><a href="#projects-page">Projects</a></li>
+                <li><a href="#contacts-page">Contacts</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle dark/light mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M12.97 3a8.02 8.02 0 0 0-4.054 7c0 4.418 3.522 8 7.866 8c1.146 0 2.236-.25 3.218-.698C18.39 19.544 15.787 21 12.849 21C7.962 21 4 16.97 4 12s3.962-9 8.849-9z"
+                        stroke-width="0.5" stroke="currentColor" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12M11 1h2v3h-2zm0 19h2v3h-2zM3.515 4.929l1.414-1.414L7.05 5.636L5.636 7.05zM16.95 18.364l1.414-1.414l2.121 2.121l-1.414 1.414zm2.121-14.85l1.414 1.415l-2.121 2.121l-1.414-1.414zM5.636 16.95l1.414 1.414l-2.121 2.121l-1.414-1.414zM23 11v2h-3v-2zM4 11v2H1v-2z"
+                        stroke-width="0.5" stroke="currentColor" />
+                </svg>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="home-page">
+            <div class="home-text">
+                <h2>Hi, my name's Jude<br>Andrade. I am an aspiring<br><span id="typed"></span></h2>
+                <p class="home-quote">'Believe you can and you're halfway there.' - Theodore Roosevelt</p>
+            </div>
+
+            <div class="home-image">
+                <img src="face.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+        </section>
+
+        <section id="about-me-page">
+            <div class="about-container">
+                <div class="about-left">
+                    <img src="face2.jpg" alt="Jude Andrade" class="about-profile-pic">
+                </div>
+                <div class="about-right">
+                    <h2 class="about-title">Innovating the Future,<br>One Line at a Time</h2>
+                    <p class="about-subtitle">Aspiring developer with a passion for creating intuitive experiences</p>
+                    <div class="about-section">
+                        <h3>Educational Background</h3>
+                        <p>Progressed through Department of education's system, from Ormoc City Sped Center (OCSC)
+                            elementrary school through New Ormoc City National High School (NOCNHS), and completed
+                            senior high at Ormoc City Senior High School (OCSHS). Specialized in technical skills and
+                            problem-solving.</p>
+                    </div>
+                    <div class="about-section">
+                        <h3>Technical Interests</h3>
+                        <p>I am deeply interested in software development and enjoy exploring different areas of coding
+                            and programming. I have a growing interest in systems security and how secure
+                            infrastructures are designed and maintained. I am also curious about networking systems and
+                            how devices communicate efficiently at scale. Alongside technical work, I enjoy creative
+                            projects that involve media and digital arts, allowing me to blend logic with creativity.
+                        </p>
+                    </div>
+                    <div class="about-section">
+                        <h3>Personal Interests</h3>
+                        <div class="hobbies-icons">
+                            <div class="hobby-item">
+                                <div class="hobby-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                        viewBox="0 0 24 24">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                                            <path stroke-linejoin="round"
+                                                d="M3.993 14.999V6.965c0-1.894 0-2.84.583-3.429c.326-.328.762-.473 1.41-.537h4.98M3.492 16.014L4.012 15h15.873l.548 1.015c1.438 2.662 1.796 3.993 1.25 4.989c-.547.996-1.996.996-4.893.996H7.135c-2.897 0-4.346 0-4.892-.996s-.188-2.327 1.25-4.989" />
+                                            <path
+                                                d="M15.437 2.001V3.98m-3.474 1.521h2.044m5.949 0H22m-2.044 2.974H22m-10.037 0h2.044m1.43 1.545V12m3.014-1.98V12M18.44 2v1.98m-3.438 5.989h3.956a1 1 0 0 0 .997-1V4.98c0-.552-.446-1-.997-1h-3.956a1 1 0 0 0-.996 1v3.989c0 .552.446 1 .996 1Z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Coding</span>
+                            </div>
+                            <div class="hobby-item">
+                                <div class="hobby-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                        viewBox="0 0 48 48">
+                                        <g fill="currentColor">
+                                            <path
+                                                d="M30.5 13a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m-9.04 4.282c-1.247.31-2.098.776-2.785 1.354c-1.03.868-1.862 2.12-2.986 4.088a2 2 0 1 1-3.473-1.985c1.119-1.957 2.25-3.788 3.883-5.162c1.704-1.436 3.79-2.248 6.603-2.561c1.176-.13 2.47-.104 3.683.437c1.273.569 2.203 1.588 2.837 2.95c.854 1.833 1.489 2.924 1.997 3.557c.245.303.416.444.513.507c.077.05.11.054.122.056h.001c.087.01.369 0 1.197-.367c.361-.16.755-.352 1.237-.587l.115-.056a54 54 0 0 1 1.784-.84a2 2 0 0 1 1.625 3.655a49 49 0 0 0-1.653.779l-.131.064c-.461.225-.925.452-1.36.644c-.9.398-2.05.83-3.297.679c-1.316-.16-2.33-.903-3.165-1.9l-2.733 5.273l3.78 4.918a2 2 0 0 1 .403 1.012l.832 7.996a2 2 0 1 1-3.978.414l-.774-7.433l-2.296-2.988l-.02.037l-.084-.172l-4.242-5.52a2 2 0 0 1-.282-1.934z" />
+                                            <path
+                                                d="m18.432 29.007l-1.472 3.96l-5.8-.46a2 2 0 1 0-.318 3.987l7.308.58a2 2 0 0 0 2.033-1.296l1.125-3.028z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Running</span>
+                            </div>
+                            <div class="hobby-item">
+                                <div class="hobby-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32px"
+                                        height="32px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M11 15.414V20h2v-4.586c0-.526-.214-1.042-.586-1.414l-2-2L13 9.414l2 2c.372.372.888.586 1.414.586H20v-2h-3.586l-3.707-3.707a1 1 0 0 0-1.414 0L8 9.586c-.378.378-.586.88-.586 1.414s.208 1.036.586 1.414z" />
+                                        <circle cx="16" cy="5" r="2" fill="currentColor" />
+                                        <path fill="currentColor"
+                                            d="M18 14c-2.206 0-4 1.794-4 4s1.794 4 4 4s4-1.794 4-4s-1.794-4-4-4m0 6c-1.103 0-2-.897-2-2s.897-2 2-2s2 .897 2 2s-.897 2-2 2M6 22c2.206 0 4-1.794 4-4s-1.794-4-4-4s-4 1.794-4 4s1.794 4 4 4m0-6c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2" />
+                                    </svg></div>
+                                <span>Cycling</span>
+                            </div>
+                            <div class="hobby-item">
+                                <div class="hobby-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32px"
+                                        height="32px" viewBox="0 0 15 15">
+                                        <path fill="currentColor"
+                                            d="M10.111 2c-.112 0-.435.147-.435.147l-3.322 1.68c-.443.175-.618.881-.352 1.234l.97 1.408l-3.97 2.029L5 9.998l2.502-1.5l2.5 1.5l1.002-1.002l-3-4l2.557-1.53c.528-.266.443-.704.443-.97C11 2.286 10.644 2 10.111 2m2.141 3a1.75 1.75 0 1 0-.003 3.501A1.75 1.75 0 0 0 12.252 5M2.5 10L0 11.5V13l2.5-1.5L5 13l2.502-1.5l2.5 1.5L12 11.5l3 1.5v-1.5L12 10l-1.998 1.5l-2.5-1.5L5 11.5z" />
+                                    </svg></div>
+                                <span>Swimming</span>
+                            </div>
+                            <div class="hobby-item">
+                                <div class="hobby-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32px"
+                                        height="32px" viewBox="0 0 50 50">
+                                        <path fill="currentColor"
+                                            d="M25.08 7.56c1.77 0 3.2-1.43 3.2-3.19a3.2 3.2 0 0 0-6.4 0c0 1.77 1.43 3.19 3.2 3.19m20.09 36.61c-.88-.41-1.88-.65-2.92-.65c-1.03 0-2.02.24-2.92.65c-.86.38-1.82.61-2.82.61s-1.98-.23-2.84-.6c-.88-.41-1.87-.65-2.92-.65s-2.04.24-2.92.65c-.87.38-1.83.61-2.84.61s-1.97-.23-2.84-.6c-.88-.41-1.88-.65-2.92-.65c-1.03 0-2.02.24-2.92.65c-.86.38-1.82.61-2.82.61c-1.01 0-1.98-.23-2.84-.6c-.88-.41-1.88-.65-2.92-.65s-2.04.24-2.92.65c-.87.38-1.83.61-2.84.61v4.23c1.01 0 1.97-.22 2.84-.6c.88-.41 1.88-.65 2.92-.65s2.04.24 2.92.65c.86.39 1.83.61 2.84.61c1 0 1.96-.22 2.82-.6c.89-.41 1.89-.65 2.92-.65c1.04 0 2.04.24 2.92.65c.87.39 1.83.61 2.84.61s1.97-.22 2.84-.6c.88-.41 1.88-.65 2.92-.65s2.04.24 2.92.65a6.92 6.92 0 0 0 5.66.01c.9-.41 1.89-.65 2.92-.65c1.04 0 2.04.24 2.92.65c.87.39 1.83.61 2.84.61v-4.23c-1.01 0-1.97-.23-2.84-.61zm.26-43.12c-.23-.09-.58-.04-.76.14l-11.72 11.8c-.18-.08-.43.02-.64.02h-4.43c-.76-1-4.76-4.91-4.76-4.91c-.2-.21-.47-.39-.73-.46c-.91-.8-2.3-.82-3.18.05l-6.85 6.87c-.26.26-.36.61-.36 1v4.45H2v2h10v11.52c0 1.43 1.07 2.58 2.49 2.58S17 34.96 17 33.53V22.01h7v15H2v3h24v-18h3v-2H17v-.82l6.48-6.43l2.64 2.71c.28.3.7.54 1.12.54h5.07c.87 0 1.7-.13 1.7-1c0-.21.07-.82 0-1c2.77-2.76 10-9.55 11-10.93v36.93h1V1.62c0-.25-.34-.47-.57-.57z"
+                                            stroke-width="1.5" stroke="currentColor" />
+                                    </svg></div>
+                                <span>Fishing</span>
+                            </div>
+                            <div class="hobby-item">
+                                <div class="hobby-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32px"
+                                        height="32px" viewBox="0 0 512 512">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M331.52 117.547c0 41.386-33.707 74.88-74.88 74.88c-41.387 0-74.88-33.494-74.88-74.88c0-41.387 33.493-74.88 74.88-74.88s74.88 33.493 74.88 74.88m-96.853 125.748L64 157.867v215.04l170.667 85.428zm42.666 215.681l171.947-86.069v-215.04l-171.947 86.069z"
+                                            clip-rule="evenodd" />
+                                    </svg></div>
+                                <span>Reading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills-page">
+            <div class="skills-container">
+                <h2 class="skills-main-title">Skills & Expertise</h2>
+                <p class="skills-subtitle">Technologies and tools I work with</p>
+                <div class="timeline-container">
+                    <div class="timeline-category">
+                        <h3 class="timeline-title">
+                            <span class="timeline-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 48 48">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.1">
+                                        <path d="M8 8h32v20H8zm0 20L4 41h40l-4-13" />
+                                        <path d="M19.9 35h8.2l1.9 6H18z" />
+                                    </g>
+                                </svg>
+                            </span> Programming Languages
+                        </h3>
+                        <div class="timeline-skills">
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 24 24">
+                                        <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1">
+                                            <path stroke-linecap="round"
+                                                d="M14.504 13.93a3.141 3.141 0 1 1 0-3.86L17.25 8.5a6.283 6.283 0 1 0 0 7z" />
+                                            <path
+                                                d="m2.966 6.706l8.5-5.369a1 1 0 0 1 1.068 0l8.5 5.369a1 1 0 0 1 .466.845v8.898a1 1 0 0 1-.466.845l-8.5 5.369a1 1 0 0 1-1.068 0l-8.5-5.369a1 1 0 0 1-.466-.845V7.55a1 1 0 0 1 .466-.845Z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>C Language</h4>
+                                    <p>Systems programming</p>
+                                </div>
+                            </div>
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 15 15">
+                                        <path fill="currentColor"
+                                            d="M3 12H1.5A1.5 1.5 0 0 1 0 10.5v-5A1.5 1.5 0 0 1 1.5 4H8V3H7V2H6v1H4V1.5A1.5 1.5 0 0 1 5.5 0h4A1.5 1.5 0 0 1 11 1.5v5a.5.5 0 0 1-.5.5h-6A1.5 1.5 0 0 0 3 8.5z" />
+                                        <path fill="currentColor"
+                                            d="M12 3v3.5A1.5 1.5 0 0 1 10.5 8h-6a.5.5 0 0 0-.5.5v5A1.5 1.5 0 0 0 5.5 15h4a1.5 1.5 0 0 0 1.5-1.5V12H9v1H8v-1H7v-1h6.5A1.5 1.5 0 0 0 15 9.5v-5A1.5 1.5 0 0 0 13.5 3z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>Python</h4>
+                                    <p>Scripting & automation</p>
+                                </div>
+                            </div>
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 15 15">
+                                        <path fill="none" stroke="currentColor"
+                                            d="m9.5 5v5m2-5v5M8 6.5h5m-5 2h5M8 10l-.402.201A2.83 2.83 0 0 1 3.5 7.668v-.336a2.832 2.832 0 0 1 4.098-2.533L8 5m-6.5 5.5v-6l6-3.5l6 3.5v6l-6 3.5z"
+                                            stroke-width="1" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>C#</h4>
+                                    <p>Application development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-category">
+                        <h3 class="timeline-title">
+                            <span class="timeline-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 48 48">
+                                    <g fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linejoin="round" d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0" />
+                                        <path stroke-linejoin="round" d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0" />
+                                        <path stroke-linecap="round" d="M4.5 31h39m-39-14h39" />
+                                    </g>
+                                </svg>
+                            </span> Web Development
+                        </h3>
+                        <div class="timeline-skills">
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 16 16">
+                                        <path fill="currentColor"
+                                            d="M.946 0L2.23 14.4L7.992 16l5.777-1.602L15.055 0zm11.722 13.482l-4.644 1.287v.007l-.012-.004l-.012.004v-.007l-4.644-1.287L2.258 1.178h11.508zm-2.5-5.198l-.204 2.29l-1.972.532l-1.967-.53l-.126-1.41H4.126l.247 2.774l3.626 1.003l3.615-1.003l.485-5.422H5.662l-.161-1.809h6.758l.158-1.766H3.57l.477 5.341z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>HTML</h4>
+                                    <p>Markup & structure</p>
+                                </div>
+                            </div>
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="m3 2l1.578 17.834L12 22l7.468-2.165L21 2zm13.3 14.722l-4.293 1.204H12l-4.297-1.204l-.297-3.167h2.108l.15 1.526l2.335.639l2.34-.64l.245-3.05h-7.27l-.187-2.006h7.64l.174-2.006H6.924l-.176-2.006h10.506z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>CSS</h4>
+                                    <p>Styling & design</p>
+                                </div>
+                            </div>
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 15 15">
+                                        <path fill="none" stroke="currentColor"
+                                            d="M12.5 8v-.167c0-.736-.597-1.333-1.333-1.333H10a1.5 1.5 0 1 0 0 3h1a1.5 1.5 0 0 1 0 3h-1A1.5 1.5 0 0 1 8.5 11m-2-5v5a1.5 1.5 0 0 1-3 0M.5.5h14v14H.5z"
+                                            stroke-width="1" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>JavaScript</h4>
+                                    <p>Interactivity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-category">
+                        <h3 class="timeline-title">
+                            <span class="timeline-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 48 48">
+                                    <g fill="none">
+                                        <path stroke="currentColor" stroke-linejoin="round" stroke-width="2.3"
+                                            d="M44 4H4v16h40zm0 24H4v16h40z" />
+                                        <path fill="currentColor"
+                                            d="M13 10h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1m0 24h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1m8-24h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1m0 24h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+                                    </g>
+                                </svg>
+                            </span> Infrastructure
+                        </h3>
+                        <div class="timeline-skills">
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M21.678.521c-1.032-.92-2.28-.55-3.513.544a9 9 0 0 0-.547.535c-2.109 2.237-4.066 6.38-4.674 9.544c.237.48.422 1.093.544 1.561a13 13 0 0 1 .164.703s-.019-.071-.096-.296l-.05-.146l-.033-.08c-.138-.32-.518-.995-.686-1.289c-.143.423-.27.818-.376 1.176c.484.884.778 2.4.778 2.4s-.025-.099-.147-.442c-.107-.303-.644-1.244-.772-1.464c-.217.804-.304 1.346-.226 1.478c.152.256.296.698.422 1.186c.286 1.1.485 2.44.485 2.44l.017.224a22 22 0 0 0 .056 2.748c.095 1.146.273 2.13.5 2.657l.155-.084c-.334-1.038-.47-2.399-.41-3.967c.09-2.398.642-5.29 1.661-8.304c1.723-4.55 4.113-8.201 6.3-9.945c-1.993 1.8-4.692 7.63-5.5 9.788c-.904 2.416-1.545 4.684-1.931 6.857c.666-2.037 2.821-2.912 2.821-2.912s1.057-1.304 2.292-3.166c-.74.169-1.955.458-2.362.629c-.6.251-.762.337-.762.337s1.945-1.184 3.613-1.72C21.695 7.9 24.195 2.767 21.678.521m-18.573.543A1.84 1.84 0 0 0 1.27 2.9v16.608a1.84 1.84 0 0 0 1.835 1.834h9.418a23 23 0 0 1-.052-2.707c-.006-.062-.011-.141-.016-.2a27 27 0 0 0-.473-2.378c-.121-.47-.275-.898-.369-1.057c-.116-.197-.098-.31-.097-.432c0-.12.015-.245.037-.386a10 10 0 0 1 .234-1.045l.217-.028c-.017-.035-.014-.065-.031-.097l-.041-.381a33 33 0 0 1 .382-1.194l.2-.019c-.008-.016-.01-.038-.018-.053l-.043-.316c.63-3.28 2.587-7.443 4.8-9.791c.066-.069.133-.128.198-.194Z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>SQLite</h4>
+                                    <p>Database management</p>
+                                </div>
+                            </div>
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 20 20">
+                                        <path fill="currentColor"
+                                            d="M18 13h1c.55 0 1 .45 1 1.01v2.98c0 .56-.45 1.01-1 1.01h-4c-.55 0-1-.45-1-1.01v-2.98c0-.56.45-1.01 1-1.01h1v-2h-5v2h1c.55 0 1 .45 1 1.01v2.98c0 .56-.45 1.01-1 1.01H8c-.55 0-1-.45-1-1.01v-2.98c0-.56.45-1.01 1-1.01h1v-2H4v2h1c.55 0 1 .45 1 1.01v2.98C6 17.55 5.55 18 5 18H1c-.55 0-1-.45-1-1.01v-2.98C0 13.45.45 13 1 13h1v-2c0-1.1.9-2 2-2h5V7H8c-.55 0-1-.45-1-1.01V3.01C7 2.45 7.45 2 8 2h4c.55 0 1 .45 1 1.01v2.98C13 6.55 12.55 7 12 7h-1v2h5c1.1 0 2 .9 2 2z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>Networking</h4>
+                                    <p>Network configuration</p>
+                                </div>
+                            </div>
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 512 512">
+                                        <rect width="352" height="352" x="80" y="80" fill="none" stroke="currentColor"
+                                            stroke-linejoin="round" stroke-width="32" rx="48" ry="48" />
+                                        <rect width="224" height="224" x="144" y="144" fill="none" stroke="currentColor"
+                                            stroke-linejoin="round" stroke-width="32" rx="16" ry="16" />
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="32"
+                                            d="M256 80V48m80 32V48M176 80V48m80 416v-32m80 32v-32m-160 32v-32m256-176h32m-32 80h32m-32-160h32M48 256h32m-32 80h32M48 176h32" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>Hardware</h4>
+                                    <p>Computer systems repair</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-category">
+                        <h3 class="timeline-title">
+                            <span class="timeline-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.2">
+                                        <path d="m13 11l5-5" />
+                                        <path stroke-linejoin="round"
+                                            d="m19 7l-2-2l2.5-1.5l1 1zM4.025 8.975a3.5 3.5 0 0 1-.79-3.74l1.422 1.422h2v-2L5.235 3.235a3.5 3.5 0 0 1 4.529 4.53l6.47 6.471a3.5 3.5 0 0 1 4.53 4.529l-1.421-1.422h-2v2l1.422 1.422a3.5 3.5 0 0 1-4.53-4.528L7.763 9.765a3.5 3.5 0 0 1-3.738-.79Z" />
+                                        <path stroke-linejoin="round"
+                                            d="m12.203 14.5l-5.604 5.604a1.35 1.35 0 0 1-1.911 0l-.792-.792a1.35 1.35 0 0 1 0-1.911L9.5 11.797" />
+                                    </g>
+                                </svg>
+                            </span> Tools & IDEs
+                        </h3>
+                        <div class="timeline-skills">
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 32 32">
+                                        <path fill="currentColor"
+                                            d="M16 .396c-8.839 0-16 7.167-16 16c0 7.073 4.584 13.068 10.937 15.183c.803.151 1.093-.344 1.093-.772c0-.38-.009-1.385-.015-2.719c-4.453.964-5.391-2.151-5.391-2.151c-.729-1.844-1.781-2.339-1.781-2.339c-1.448-.989.115-.968.115-.968c1.604.109 2.448 1.645 2.448 1.645c1.427 2.448 3.744 1.74 4.661 1.328c.14-1.031.557-1.74 1.011-2.135c-3.552-.401-7.287-1.776-7.287-7.907c0-1.751.62-3.177 1.645-4.297c-.177-.401-.719-2.031.141-4.235c0 0 1.339-.427 4.4 1.641a15.4 15.4 0 0 1 4-.541c1.36.009 2.719.187 4 .541c3.043-2.068 4.381-1.641 4.381-1.641c.859 2.204.317 3.833.161 4.235c1.015 1.12 1.635 2.547 1.635 4.297c0 6.145-3.74 7.5-7.296 7.891c.556.479 1.077 1.464 1.077 2.959c0 2.14-.02 3.864-.02 4.385c0 .416.28.916 1.104.755c6.4-2.093 10.979-8.093 10.979-15.156c0-8.833-7.161-16-16-16z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>GitHub</h4>
+                                    <p>Version control & collaboration</p>
+                                </div>
+                            </div>
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 128 128">
+                                        <path fill="currentColor"
+                                            d="M9.905 0c-5.444 0-9.9 4.457-9.9 9.901v65.796A9.91 9.91 0 0 0 6 84.797l8.015 3.433l-.361.425a9.92 9.92 0 0 0-2.381 6.443v2.562c-.002.096 0 .182 0 .204V118.1c0 1.277.256 2.497.691 3.606v.008c.005.02.029.1.086.236c.071.168.12.26.134.283h.008a9.9 9.9 0 0 0 1.98 2.86c.166.166.352.33.542.495l.165.158a10 10 0 0 0 1.572 1.053c.244.132.396.195.448.22c-.007-.003.125.08.416.204l.032.008c.294.123.59.224.88.314c.313.098.633.185.959.252c.636.13 1.303.204 1.996.204h22.285c.088 0 .143-.006.165-.008h2.899q.707.001 1.4-.094v-.008l71.562-10.216c4.863-.695 8.503-4.886 8.503-9.799V72.02a9.9 9.9 0 0 0-1.666-5.494L115.109 49.71l-.676.802a9.9 9.9 0 0 0 2.294-6.334V21.17c0-5.445-4.456-9.902-9.9-9.902H89.451l-4.581-6.86A9.91 9.91 0 0 0 76.636 0Zm0 4.023h66.73a5.87 5.87 0 0 1 4.888 2.617l5.776 8.652h19.527a5.85 5.85 0 0 1 5.878 5.878v23.008c0 1.401-.499 2.75-1.414 3.819l-.008.008l-1.203 1.422l12.903 19.33c.647.97.99 2.101.99 3.262v35.856a5.86 5.86 0 0 1-5.044 5.823l-71.564 10.215v-.008a6 6 0 0 1-.833.063h-2.939a3 3 0 0 0-.172.008H21.182c-.397 0-.804-.045-1.195-.126a6 6 0 0 1-.566-.141a6 6 0 0 1-.526-.196h-.008l-.008-.008c.051.02-.017-.013-.236-.118a5 5 0 0 0-.275-.126a6 6 0 0 1-.927-.629h-.008a6 6 0 0 1-.417-.385a5.9 5.9 0 0 1-1.178-1.697h.007c-.051-.112-.076-.155-.086-.173l-.008-.023l-.047-.118a5.8 5.8 0 0 1-.409-2.138v-23c0-1.404.501-2.761 1.415-3.827l3.921-4.581l-13.044-5.587a5.87 5.87 0 0 1-3.56-5.406V9.9a5.85 5.85 0 0 1 5.878-5.878zM25.26 25.256v77.48h77.48v-77.48Zm48.971 9.123c2.353 0 4.518.44 6.483 1.312s3.594 2.092 4.896 3.67a12.36 12.36 0 0 1 2.64 5.398h-5.94a7.7 7.7 0 0 0-1.745-2.758a7.6 7.6 0 0 0-2.758-1.846c-1.08-.429-2.264-.645-3.536-.645c-1.717 0-3.261.423-4.645 1.281q-2.076 1.29-3.26 3.552q-1.164 2.244-1.164 5.068t1.163 5.085q1.184 2.241 3.261 3.528c1.384.859 2.928 1.289 4.645 1.289c1.273 0 2.457-.217 3.536-.645q1.616-.64 2.758-1.823a7.9 7.9 0 0 0 1.744-2.782h5.941a12.5 12.5 0 0 1-2.64 5.415c-1.302 1.565-2.93 2.782-4.896 3.654s-4.13 1.312-6.483 1.312c-2.782 0-5.302-.656-7.56-1.957a14.2 14.2 0 0 1-5.311-5.398q-1.932-3.444-1.933-7.678q.001-4.236 1.933-7.661q1.928-3.447 5.312-5.399q3.383-1.972 7.56-1.972zm-39.101.495H47.6q3.055.001 5.383 1.124q2.323 1.122 3.568 3.159c.844 1.357 1.273 2.921 1.273 4.707c0 1.785-.432 3.407-1.29 4.777c-.843 1.37-2.06 2.438-3.637 3.199q-2.347 1.122-5.462 1.123h-6.64v10.978H35.13zm5.665 4.715v8.66h6.436q1.432 0 2.491-.52q1.079-.539 1.658-1.516q.58-.995.581-2.302c0-.872-.193-1.652-.581-2.287a3.77 3.77 0 0 0-1.658-1.493q-1.059-.541-2.491-.542zM34.933 87.24h30.992v5.815H34.933Z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>PyCharm</h4>
+                                    <p>Python development</p>
+                                </div>
+                            </div>
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M.011 0v8.406H8.61V0zm15.39 0v8.406H24V0zM8.972.658l.012 7.869l2.54 2.43l.007-5.564zm6.066 0l-2.555 4.735l.004 5.564l2.54-2.43zM.332 8.768l5.52 2.677l5.655-.006l-2.773-2.67zm14.944 0L12.53 11.49l5.655-.09l5.498-2.631zm-9.323 3.855L.318 15.232h8.405l2.748-2.722zm6.565-.113l2.747 2.722h8.402l-5.586-2.609zm-1.006.533l-2.54 2.43l-.011 7.873l2.555-4.74zm.964 0l-.008 5.564l2.559 4.74l-.011-7.874zM0 15.598V24h8.598v-8.402zm15.39 0V24h8.598v-8.402z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>CodeBlocks</h4>
+                                    <p>C/C++ IDE</p>
+
+                                </div>
+                            </div>
+                            <div class="timeline-skill">
+                                <div class="skill-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        viewBox="0 0 8 8">
+                                        <path fill="currentColor" d="M6 2L0 7V6l6-6l2 1v6L6 8L0 2V1l6 5" />
+                                    </svg>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>VS Code</h4>
+                                    <p>Multi-language editor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects-page">
+            <div class="projects-container">
+                <h2 class="projects-main-title">Projects</h2>
+                <p class="projects-subtitle">A collection of recent projects that show my experience and ongoing
+                    learning in web development, design, and problem-solving.</p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src=flexbox.png alt="Portfolio Website Project">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Flexbox Activities</h3>
+                            <p>This is my major first-semester project in Introduction to Computing that applied HTML
+                                and CSS concepts, with an emphasis on layout design using Flexbox.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/judelang18/Flexbox-Activities/blob/main/index.html"
+                                    target="_blank" class="btn-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                    See Code
+                                </a>
+                                <a href="https://andrade-4-4letters.netlify.app/" target="_blank" class="btn-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                    See Outputs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="aliblog.png" alt="Task Management App Project">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>EVSU-OC-Aliblog: Eastern Visayas State University - Ormoc Campus Automated Library
+                                Logbook</h3>
+                            <p>EVSU-OC Aliblog: Eastern Visayas State University - Ormoc Campus Automated Library
+                                Logbook is a group project developed for an Object - Oriented Programming course. The
+                                project aimed to modernize the traditional library logbook by implementing QR code
+                                automation to make the logging process faster and more efficient. I served as the group
+                                leader and helped guide the project from planning to implementation.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Tkinter</span>
+                                <span class="tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Jude-Andrade/Object-Oriented-Programming---Final-Project"
+                                    target="_blank" class="btn-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                    See Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts-page">
+            <div class="contact-wrapper">
+                <h2 class="contact-heading">Get In Touch</h2>
+                <p class="contact-desc">Feel free to reach out through any platform or send me a message</p>
+
+                <div class="contact-card">
+                    <h3 class="card-title">Send Me a Message</h3>
+
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name *</label>
+                                <input type="text" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Surname *</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Contact Number</label>
+                                <input type="text" placeholder="+63">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select>
+                                <option>Prefer not to say</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="send-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="social-divider">
+                    <span>or connect with me on</span>
+                </div>
+
+                <div class="social-bar">
+                    <a href="https://www.facebook.com/jude.andrade.338" target="_blank" class="social-btn"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/andradejude_szkdecueleen/" target="_blank"
+                        class="social-btn"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8" />
+                                <path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51l.01-.011" />
+                            </g>
+                        </svg></a>
+                    <a href="http://t.me/szkdecueleen" target="_blank" class="social-btn"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12s12-5.373 12-12S18.627 0 12 0m5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21l-1.446 1.394a.76.76 0 0 1-.6.295h-.005l.213-3.054l5.56-5.022c.24-.213-.054-.334-.373-.121L8.32 13.617l-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+                        </svg></a>
+                    <a href="https://github.com/Jude-Andrade" target="_blank" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42px" height="42px" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44a10.32 10.32 0 0 0-3.393 6.17a10.48 10.48 0 0 0 1.317 6.955a10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494c0-.245-.01-1.052-.014-1.908c-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621c.317.044.62.163.885.346c.266.183.487.426.647.71c.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37c-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75a3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05c.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814c0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421a10.47 10.47 0 0 0 1.313-6.948a10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
+                                clip-rule="evenodd" />
+                        </svg></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2024 Jude Andrade. All rights reserved.</p>
+                <p class="footer-course">Bachelor of Science in Information Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
